@@ -1,0 +1,23 @@
+
+<nav class="nav nav-pills nav-justified">
+  <a class="nav-item nav-link active" <%= link_to "Authors", new_author_path %></a>
+  <a class="nav-item nav-link" <%= link_to "New books", new_book_path %> </a>
+ 
+</nav>
+<p style="color: green"><%= notice %></p>
+<h1>Books application</h1>
+<h3>It's a rails application that allows you to perform Crud operations</h3>
+
+<div id="books">
+  <% @books.each do |book| %>
+    <%= render book %>
+    <%# <p>
+    <strong>Author of this book:</strong>
+    <%= book.author.name %>
+  
+    
+   
+  <% end %>
+</div>
+
+

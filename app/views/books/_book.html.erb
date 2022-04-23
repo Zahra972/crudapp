@@ -1,0 +1,30 @@
+<div id="<%= dom_id book %>">
+<table class="table table-hover">
+<thead>
+    <tr>
+      <th scope="col">Book Title</th>
+     
+      <th scope="col">Description:</th>
+      <th scope="col">Purchases:</th>
+      <th scope="col">Author:</th>
+      <th scope="col">Link</th>
+    </tr>
+    </thead>
+
+     <tbody>
+    <tr>
+      <td> <%= book.title %></td>
+    
+      <td><%= book.description %></td>
+     <td><%= book.purchases %></td>
+      <td><%= book.author.name %></td>
+      <td>
+      <%= link_to "Show this book", book %>
+    </td>
+
+    </tr>
+    </tbody>
+</table>
+
+
+</div>
